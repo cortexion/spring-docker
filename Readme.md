@@ -1,19 +1,11 @@
-## Spring Boot Heroku Deployment Example
+<groupId>com.example</groupId>
+<artifactId>spring-boot</artifactId>
+<version>0.0.1-SNAPSHOT</version>
 
-**Tutorial:** [Deploying / Hosting Spring Boot applications on Heroku](https://www.callicoder.com/deploy-host-spring-boot-apps-on-heroku/) 
+inside target (git bash):
+$ ./mvnw package && java -jar target/spring-boot-0.0.1-SNAPSHOT.jar
 
-## Running the application locally
-
-```bash
-git clone https://github.com/callicoder/spring-boot-heroku-deployment-example.git
-cd spring-boot-heroku-deployment-example
+root level:
 mvn spring-boot:run
-```
 
-## Deploying to Heroku
-
-Read the [Tutorial](https://www.callicoder.com/deploy-host-spring-boot-apps-on-heroku/) for instructions on deploying to Heroku.
-
-Or click this magic button to deploy this project to your heroku account:
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+docker build -t springio/gs-spring-boot-docker . && docker run -p 8080:8080 springio/gs-spring-boot-docker

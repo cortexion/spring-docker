@@ -4,11 +4,11 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 	<groupId>com.example</groupId>
-	<artifactId>heroku-demo</artifactId>
+	<artifactId>spring-boot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>heroku-demo</name>
+	<name>spring-boot</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -124,7 +124,7 @@
                         </goals>
                         <phase>generate-resources</phase>
                     </execution>
-                    <execution>
+                    <!--<execution>
                         <id>yarn test</id>
                         <goals>
                             <goal>yarn</goal>
@@ -136,7 +136,7 @@
                                 <CI>true</CI>
                             </environmentVariables>
                         </configuration>
-                    </execution>
+                    </execution>-->
                     <execution>
                         <id>yarn build</id>
                         <goals>
